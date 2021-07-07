@@ -1,6 +1,16 @@
 <!--logs.wxml-->
-<view class="container log-list">
+<!-- <view class="container log-list">
   <block wx:for="{{logs}}" wx:key="timeStamp" wx:for-item="log">
     <text class="log-item">{{index + 1}}. {{log.date}}</text>
   </block>
-</view>
+</view> -->
+<scroll-view class="content-list" scroll-y='true' style="height:{{windowHeight}}px" bindscrolltolower='loadMoreImages'>
+  <image 
+    wx:for='{{dataList}}'  
+    wx:key='item' 
+    src='{{item.src}}'
+    style='position: absolute; top: {{item.top}}px; left: {{item.left}}px; width: {{imgWidth}}px; height: {{item.height}}px' 
+    bindload='loadImage' 
+    data-index='{{index}}'
+  />
+</scroll-view>
