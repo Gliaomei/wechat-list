@@ -6,7 +6,11 @@ App<IAppOption>({
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
+    wx.getSystemInfo({
+      success: (res)=>{
+        wx.setStorageSync('windowHeight', res.windowHeight)
+      },
+    });
     // 登录
     wx.login({
       success: res => {

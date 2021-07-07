@@ -1,3 +1,45 @@
-content-list{
-  height: 100%;
+.content{
+  text-align: justify; 
+  display: flex;
+}
+.left,.right{
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+.item{
+  width: 98%;
+  background-color: #ECEDEF;
+  margin: 2rpx; 
+  margin-bottom: 2rpx;
+  display: inline-block;
+  border: 1px solid #ECEDEF;
+}
+.item-title-box{
+  display: flex;
+  position: relative;
+}
+.item-title{
+  font-size: 24rpx;
+  color: #1e1e1e;
+  font-weight: 800;
+  margin: 15rpx;
+  line-height: 27rpx;
+}
+.item .name{
+  display: flex;
+  flex-direction: column;
+  padding: 0 15rpx;
+  padding-bottom: 10rpx;
+  font-size: 22rpx;
+  color: #1e1e1e;
+  font-family: 'PingFang SC-Medium';
+}
+.name-title{
+  flex: 1;
+  margin-bottom: 10rpx;
+  color: #c4c4c4;
+}
+.item-img{
+  width: 100%
 }
