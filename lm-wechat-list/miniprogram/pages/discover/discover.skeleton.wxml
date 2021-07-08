@@ -20,7 +20,7 @@
     <view class="content" style="height:603px">
       <view class="left">
         <view class="item sk-item" style="border: none;">
-          <image class="item-img sk-image skeleton-loading" mode="widthFix" style="height: 190px;"></image>
+          <image class="item-img sk-image skeleton-loading" mode="widthFix" style="height: 184px;"></image>
           <view class="item-title-box">
             <text class="item-title sk-transparent-text skeleton-loading">新款低帮休闲运动鞋</text>
           </view>
@@ -30,7 +30,7 @@
           </view>
         </view>
         <view class="item sk-item" style="border: none;">
-          <image class="item-img sk-image skeleton-loading" mode="widthFix" style="height: 193px;"></image>
+          <image class="item-img sk-image skeleton-loading" mode="widthFix" style="height: 183px;"></image>
           <view class="item-title-box">
             <text class="item-title sk-transparent-text skeleton-loading">新款低帮休闲运动鞋</text>
           </view>
@@ -45,7 +45,7 @@
       </view>
       <view class="right">
         <view class="item sk-item" style="border: none;">
-          <image class="item-img sk-image skeleton-loading" mode="widthFix" style="height: 184px;"></image>
+          <image class="item-img sk-image skeleton-loading" mode="widthFix" style="height: 198px;"></image>
           <view class="item-title-box">
             <text class="item-title sk-transparent-text skeleton-loading">新款低帮休闲运动鞋</text>
           </view>
