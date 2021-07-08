@@ -34,9 +34,6 @@ Page({
   },
   // 上拉加载更多
   onReachBottom: function():void {
-    // if(this.data.dataList.length > 31){
-    //   return;
-    // }
     let changeList: Array<any> = [...this.data.dataList];
 
     let tmpArr: Array<any> = [];
@@ -50,9 +47,9 @@ Page({
       wx.hideLoading()
     });
   },
-  // 上拉刷新
+  // 下拉刷新
   onPullDownRefresh: function():void {
-    // this.setData({ dataList: [] });
+    this.setData({ dataList: [] });
     this.getShowList();
   }
 })

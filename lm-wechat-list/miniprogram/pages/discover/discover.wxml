@@ -4,10 +4,6 @@
 <view
   wx-else
   class="content" 
-  scroll-y='true' 
-  style="height:{{windowHeight}}px" 
-  bindscrolltolower='loadMoreImages'
-  bindrefresherrefresh='refreshLoad'
 >
   <view class="left">
     <block wx:for="{{dataList}}" wx:key="item">
