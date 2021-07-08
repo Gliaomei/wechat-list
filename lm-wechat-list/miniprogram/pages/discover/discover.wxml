@@ -1,7 +1,8 @@
 <!--logs.wxml-->
-<!-- <import src="./logs.skeleton.wxml"/>
-<template is="skeleton" wx-if="{{loading}}" /> -->
-<view 
+<import src="discover.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+<view
+  wx-else
   class="content" 
   scroll-y='true' 
   style="height:{{windowHeight}}px" 

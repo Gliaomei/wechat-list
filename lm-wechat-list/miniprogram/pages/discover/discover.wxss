@@ -1,4 +1,4 @@
-/* @import "./logs.skeleton.wxss"; */
+@import "./discover.skeleton.wxss";
 .content{
   text-align: justify; 
   display: flex;
@@ -15,29 +15,30 @@
   margin-bottom: 2rpx;
   display: inline-block;
   border: 1px solid #ECEDEF;
+  padding-bottom: 24rpx;
 }
 .item-title-box{
   display: flex;
   position: relative;
+  padding: 0 20rpx;
 }
 .item-title{
   font-size: 24rpx;
   color: #1e1e1e;
   font-weight: 800;
-  margin: 15rpx;
   line-height: 27rpx;
+  margin: 15rpx 0rpx;
 }
 .item .name{
   display: flex;
   flex-direction: column;
-  padding: 0 15rpx;
+  padding: 0 20rpx;
   padding-bottom: 10rpx;
   font-size: 22rpx;
   color: #1e1e1e;
   font-family: 'PingFang SC-Medium';
 }
 .name-title{
-  flex: 1;
   margin-bottom: 10rpx;
   color: #c4c4c4;
 }

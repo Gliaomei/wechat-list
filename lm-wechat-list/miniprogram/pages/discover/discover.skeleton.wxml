@@ -1,0 +1,73 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/7/8 下午1:55:13
+使用方法：
+在 /Users/fcx/Desktop/workplace/project/wechat-list/lm-wechat-list/miniprogram/pages/discover/discover.wxml 引入模板
+
+```
+<import src="discover.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 /Users/fcx/Desktop/workplace/project/wechat-list/lm-wechat-list/miniprogram/pages/discover/discover.wxss 中引入样式
+```
+@import "./discover.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="content" style="height:603px">
+      <view class="left">
+        <view class="item sk-item" style="border: none;">
+          <image class="item-img sk-image skeleton-loading" mode="widthFix" style="height: 190px;"></image>
+          <view class="item-title-box">
+            <text class="item-title sk-transparent-text skeleton-loading">新款低帮休闲运动鞋</text>
+          </view>
+          <view class="name">
+            <text class="name-title sk-transparent-text sk-text-mid skeleton-loading">男子  足球</text>
+            <text class="sk-transparent-text sk-text-small skeleton-loading">¥499</text>
+          </view>
+        </view>
+        <view class="item sk-item" style="border: none;">
+          <image class="item-img sk-image skeleton-loading" mode="widthFix" style="height: 193px;"></image>
+          <view class="item-title-box">
+            <text class="item-title sk-transparent-text skeleton-loading">新款低帮休闲运动鞋</text>
+          </view>
+          <view class="name">
+            <text class="name-title sk-transparent-text sk-text-mid skeleton-loading">男子  运动表现  足球</text>
+            <text class="sk-transparent-text sk-text-small skeleton-loading">¥369</text>
+          </view>
+        </view>
+        <view class="item sk-item" style="border: none;">
+          <image class="item-img sk-image" mode="widthFix" style="height: 184px;"></image>
+        </view>
+      </view>
+      <view class="right">
+        <view class="item sk-item" style="border: none;">
+          <image class="item-img sk-image skeleton-loading" mode="widthFix" style="height: 184px;"></image>
+          <view class="item-title-box">
+            <text class="item-title sk-transparent-text skeleton-loading">新款低帮休闲运动鞋</text>
+          </view>
+          <view class="name">
+            <text class="name-title sk-transparent-text sk-text-mid skeleton-loading">男子  足球</text>
+            <text class="sk-transparent-text sk-text-small skeleton-loading">¥699</text>
+          </view>
+        </view>
+        <view class="item sk-item" style="border: none;">
+          <image class="item-img sk-image skeleton-loading" mode="widthFix" style="height: 184px;"></image>
+          <view class="item-title-box">
+            <text class="item-title sk-transparent-text skeleton-loading">新款低帮休闲运动鞋</text>
+          </view>
+          <view class="name">
+            <text class="name-title sk-transparent-text sk-text-mid skeleton-loading">男子  足球</text>
+            <text class="sk-transparent-text sk-text-small skeleton-loading">¥99</text>
+          </view>
+        </view>
+        <view class="item sk-item" style="border: none;">
+          <image class="item-img sk-image" mode="widthFix" style="height: 184px;"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
