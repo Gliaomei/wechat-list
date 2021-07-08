@@ -1,0 +1,38 @@
+<import src="index.skeleton.wxml"/>
+<!-- 骨架屏显示 -->
+<template is="skeleton" wx:if="{{loading}}" />
+<!-- list展示 -->
+<view wx:else class="content" >
+  <view class="left">
+    <view
+      wx:for="{{showList}}"
+      wx:key="item"
+      data-index="{{index}}"
+    >
+      <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+    </view>
+  </view>
+  <view class="right">
+    <view
+      wx:for="{{showList}}"
+      wx:key="item"
+      data-index="{{index}}"
+    >
+      <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+    </view>
+  </view>
+</view>
+
+<!--  模版 -->
+<template name="item">
+  <view class="item">
+    <image class="item-img" src="{{src}}" mode="widthFix"></image>
+    <view class="item-title-box">
+      <text class="item-title">{{title}}</text> 
+    </view>
+    <view class="name">
+      <text class="name-title">{{description}}</text>
+      <text>¥{{price}}</text>
+    </view>
+  </view>
+</template>

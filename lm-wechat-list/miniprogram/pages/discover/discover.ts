@@ -6,11 +6,6 @@
 Page({
   data: {
     dataList: [], //数据源
-    windowWidth: 0, //页面视图宽度
-    windowHeight: wx.getStorageSync('windowHeight'), //视图高度
-    imgMargin: 6, //图片边距: 单位px
-    imgWidth: 0,  //图片宽度: 单位px
-    topArr: [0, 0], //存储每列的累积top
     loading: false,
   },
   onLoad():void {

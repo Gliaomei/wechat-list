@@ -1,32 +1,7 @@
-<!--logs.wxml-->
-<import src="discover.skeleton.wxml"/>
-<template is="skeleton" wx-if="{{loading}}" />
-<view
-  wx-else
-  class="content" 
->
-  <view class="left">
-    <block wx:for="{{dataList}}" wx:key="item">
-      <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
-    </block>
-  </view>
-  <view class="right">
-    <block wx:for="{{dataList}}" wx:key="item">
-      <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
-    </block>
-  </view>
+<view >
+  <!-- list组件 -->
+  <show-list 
+    showList="{{dataList}}" 
+    loading="{{loading}}"
+  />
 </view>
-
-<!--  模版 -->
-<template name="item">
-  <view class="item">
-    <image class="item-img" src="{{src}}" mode="widthFix"></image>
-    <view class="item-title-box">
-      <text class="item-title">{{title}}</text> 
-    </view>
-    <view class="name">
-      <text class="name-title">{{description}}</text>
-      <text>¥{{price}}</text>
-    </view>
-  </view>
-</template>
