@@ -11,7 +11,7 @@ Page({
     },
     bindViewTap: function () {
         wx.navigateTo({
-            url: '../logs/logs',
+            url: '../discover/discover',
         });
     },
     onLoad: function () {

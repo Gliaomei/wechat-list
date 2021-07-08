@@ -1,3 +1,4 @@
+/* @import "./logs.skeleton.wxss"; */
 .content{
   text-align: justify; 
   display: flex;

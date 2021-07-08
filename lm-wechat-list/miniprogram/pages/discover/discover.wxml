@@ -1,5 +1,13 @@
 <!--logs.wxml-->
-<scroll-view class="content" scroll-y='true' style="height:{{windowHeight}}px" bindscrolltolower='loadMoreImages'>
+<!-- <import src="./logs.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" /> -->
+<view 
+  class="content" 
+  scroll-y='true' 
+  style="height:{{windowHeight}}px" 
+  bindscrolltolower='loadMoreImages'
+  bindrefresherrefresh='refreshLoad'
+>
   <view class="left">
     <block wx:for="{{dataList}}" wx:key="item">
       <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
@@ -10,7 +18,7 @@
       <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
     </block>
   </view>
-</scroll-view>
+</view>
 
 <!--  模版 -->
 <template name="item">

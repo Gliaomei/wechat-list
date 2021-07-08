@@ -11,17 +11,21 @@ Page({
     imgMargin: 6, //图片边距: 单位px
     imgWidth: 0,  //图片宽度: 单位px
     topArr: [0, 0], //存储每列的累积top
+    loading: false,
   },
   onLoad():void {
+    this.getShowList();
+  },
+  // 获取列表
+  getShowList: function():void {
     let that = this;
-    wx.showLoading({
-      title: '加载中...',
-    })
+    this.setData({ loading: true });
     wx.request({
       url: 'https://example.com/showlist',
       dataType: 'json',
       success(res:any) {
-        wx.hideLoading();
+        that.setData({ loading: false });
+        wx.stopPullDownRefresh() //停止下拉刷新
         that.setData({ dataList: res.data.list }, function(){
           wx.hideLoading()
         });
@@ -29,11 +33,11 @@ Page({
     })
   },
   // 上拉加载更多
-  loadMoreImages: function():void {
-    wx.showLoading({
-      title: '加载中...',
-    })
-  let changeList:Array<any> = [...this.data.dataList];
+  onReachBottom: function():void {
+    // if(this.data.dataList.length > 31){
+    //   return;
+    // }
+    let changeList: Array<any> = [...this.data.dataList];
 
     let tmpArr: Array<any> = [];
     for (let i = 0; i < changeList.length; i++) {
@@ -45,6 +49,11 @@ Page({
     this.setData({ dataList: dataList }, function(){
       wx.hideLoading()
     });
+  },
+  // 上拉刷新
+  onPullDownRefresh: function():void {
+    // this.setData({ dataList: [] });
+    this.getShowList();
   }
 })
 
