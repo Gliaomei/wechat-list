@@ -1,7 +1,10 @@
-<view >
+<view class="discover-content">
+  <search-bar/>
   <!-- list组件 -->
-  <show-list 
-    showList="{{dataList}}" 
-    loading="{{loading}}"
-  />
+  <view class="list-content">
+    <show-list 
+      showList="{{dataList}}" 
+      loading="{{loading}}"
+    />
+  </view>
 </view>

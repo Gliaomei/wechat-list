@@ -1,0 +1,7 @@
+.discover-content{
+  position: relative;
+}
+.list-content{
+  margin-top: 60px;
+  position: relative;
+}
