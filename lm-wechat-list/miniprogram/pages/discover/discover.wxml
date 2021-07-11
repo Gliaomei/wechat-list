@@ -1,5 +1,5 @@
 <view class="discover-content">
-  <search-bar/>
+  <search-bar navbarData="{{[1,2,3,4]}}"/>
   <!-- list组件 -->
   <view class="list-content">
     <show-list 

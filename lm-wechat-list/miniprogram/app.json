@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/discover/discover"
+    "pages/discover/discover",
+    "pages/search-page/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

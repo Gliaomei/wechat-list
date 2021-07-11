@@ -12,22 +12,18 @@
     justify-content: center;
     align-items: center;
   }
-  .search-group {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  .swiper_zi{
+    height:80%;
+    width: 60%;
     border: 1px solid #ccc;
-    border-radius: 60rpx;
-    padding: 0 10rpx;
+    border-radius: 50rpx;
+    padding-left: 20rpx;
   }
-  .search-group > input {
-    font-size: 25rpx;
+  .swiper_zi .zimubox .swiper_item {
+    font-size: 26rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #ccc;
+    line-height: 50rpx;
   }
-  .search-group > image {
-    height: 32rpx;
-    width: 32rpx;
-    margin-right: 20rpx
-  }
-  

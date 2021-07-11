@@ -2,16 +2,11 @@
 Component({
   properties: {
     navbarData: {   //navbarData   由父页面传递的数据，变量名字自命名
-      type: Object,
-      value: {},
+      type: Array,
+      value: [],
     }
   },
   data: {
-    height: 0,
-    //默认值  默认显示左上角
-    navbarData: {
-      showCapsule: 1
-    },
     navHeight: 0,
     menuButtonInfo: {
       top: 0,
@@ -21,22 +16,22 @@ Component({
     },
     searchMarginTop: 0, // 搜索框上边距
     searchWidth: 0, // 搜索框宽度
-    searchHeight: 0 // 搜索框高度
+    searchHeight: 0, // 搜索框高度
+    placeholder: '',
+    adList:[{
+      'url':'',
+      'title':'刚刚预约了服务'
+    },{
+      'url':'',
+      'title':'内容内容内容内容内容'
+    }],
   },
   lifetimes: {
-    
-    
     // 生命周期函数，可以为函数，或一个在methods段中定义的方法名
     attached: function () {
-      // wx.getSystemInfo({
-      //   success: (res) => {
-      //     this.data.height = res.statusBarHeight
-      //   }
-      // })
       this.setData({
         menuButtonInfo: wx.getMenuButtonBoundingClientRect()
       })
-      console.log(this.data.menuButtonInfo)
       const { top, width, height, right } = this.data.menuButtonInfo;
       wx.getSystemInfo({
         success: (res) => {
@@ -50,10 +45,24 @@ Component({
           })
         },
       })
+      this.changePlaceholder();
     },
-    moved: function () { },
-    detached: function () { },
   },
   methods: {
+    // 更改placeholder
+    changePlaceholder :function ():void{
+      // let _this = this;
+      for (let i=0; i<this.properties.navbarData.length; i++) {
+        setTimeout(() =>{
+          this.setData({placeholder: this.properties.navbarData[i]})
+        } , 3000*i)
+      }
+    },
+    // 点击跳转搜索页面
+    bindViewTap: function():void{
+      wx.navigateTo({
+        url: '../../pages/search-page/index',
+      })
+    }
   }
 }) 

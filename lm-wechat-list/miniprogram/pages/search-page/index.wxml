@@ -1,0 +1,15 @@
+<!-- 搜索框 -->
+<view class="search-page-search">
+  <input class="search-page-input"  placeholder="查找产品"/>
+  <text >搜索</text>
+</view>
+<!-- 搜索历史 -->
+<view class="search-history">
+  <text>搜索历史</text>
+  <text> 清除</text>
+</view>
+<view class="history-list" >
+  <view wx:for="{{[1,2,3]}}">
+    <text class="item">{{item}}</text>
+  </view>
+</view>

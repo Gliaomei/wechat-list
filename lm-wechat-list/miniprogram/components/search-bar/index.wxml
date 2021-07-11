@@ -1,8 +1,15 @@
 <!--index.wxml-->
 <view class="custom-bar" style="height:{{navHeight}}px">
   <view class="custom-bar__wrapper" style="margin-top:{{searchMarginTop}}px; height: {{searchHeight}}px;width: {{searchWidth}}px" >
-    <view class="search-group">
-      <input class="search-group__input" auto-focus placeholder="输入点什么吧"/>
-    </view>
+    <swiper class="swiper_zi" vertical="true" autoplay="true" circular="true" interval="3000">
+      <block wx:for="{{adList}}">
+      <swiper-item>
+        <view class="zimubox">
+          <view class="swiper_item">{{item.title}}</view>
+        </view>
+      </swiper-item>
+      </block>
+    </swiper>
   </view>
 </view>
+

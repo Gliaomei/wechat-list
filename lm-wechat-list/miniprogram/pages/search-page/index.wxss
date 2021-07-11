@@ -1,0 +1,30 @@
+.search-page-search{
+  height: 80rpx;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-left: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-page-input{
+  width: 80%;
+}
+.search-history{
+  padding: 0rpx 40rpx;
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.history-list{
+  margin-top: 50rpx;
+  padding: 0rpx 40rpx;
+  display: flex;
+}
+.item{
+  padding: 20rpx;
+  background-color: #f0f0f0;
+  height: 30rpx;
+  margin-right: 30rpx;
+}
