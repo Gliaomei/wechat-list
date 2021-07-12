@@ -20,27 +20,33 @@ Page({
   // 搜索方法
   searchHandle: function():void{
     // 如果input搜索为空 则直接搜素 点击进入的item
-    let list:any[] = []
+    let list:Array<any> = [];
     // 如果本地有历史记录
     if(wx.getStorageSync("historyList").length !== 0){
       list = [...wx.getStorageSync("historyList")]
     }
     if(this.data.inputValue === ''){
       list.push(wx.getStorageSync('clickItem'))
-      wx.setStorage({
-        key: "historyList",
-        data: list
+      this.setData({
+        inputValue: wx.getStorageSync('clickItem')
       })
     }else{
       list.push(this.data.inputValue)
-      wx.setStorage({
-        key: "historyList",
-        data: list,
-      })
     }
-    wx.navigateBack({
-      delta: -1
-    });
+    // 去重
+    let newList:Array<any> = [];
+    for(let i = 0; i < list.length; i++) {
+		  if (list.indexOf(list[i]) == i){
+        newList.push(list[i])
+      }
+    }
+    wx.setStorage({
+      key: "historyList",
+      data: newList
+    })
+    wx.navigateTo({
+      url: `../discover/discover?keyword=${this.data.inputValue}`,
+    })
   },
   // 清空
   clearHistory:function():void{
@@ -50,6 +56,12 @@ Page({
     wx.setStorage({
       key: "historyList",
       data: [],
+    })
+  },
+  //点历史搜索
+  searchHistory:function(item:any):void {
+    wx.navigateTo({
+      url: `../discover/discover?keyword=${item.currentTarget.dataset.item}`,
     })
   }
 })

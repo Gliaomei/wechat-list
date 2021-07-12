@@ -7,10 +7,23 @@ Page({
   data: {
     dataList: [], //数据源
     loading: false,
-    navbarData: ["Ozworld","看见每一种可能","2020欧洲杯","LOVE UNITES新系列","ADIZERO PRIME X"],
+    navbarData: [],
   },
-  onLoad():void {
+  onLoad(option):void {
     this.getShowList();
+    let pages = getCurrentPages();
+    // 从搜索页面进入
+    if(pages[pages.length - 2].route === 'pages/search-page/index' && option.keyword){
+      let list = [option.keyword]
+      list.push()
+      this.setData({
+        navbarData: list as any
+      })
+    }else{
+      this.setData({
+        navbarData: ["Ozworld","看见每一种可能","2020欧洲杯","LOVE UNITES新系列","ADIZERO PRIME X"] as any,
+      })
+    }
   },
   // 获取列表
   getShowList: function():void {

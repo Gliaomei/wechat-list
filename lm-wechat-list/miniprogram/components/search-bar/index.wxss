@@ -4,17 +4,24 @@
     left: 0;
     top: 0;
     width: 100%;
-    border-bottom: 10rpx;
   }
   .custom-bar__wrapper {
     padding: 0 10rpx;
     display: flex;
-    justify-content: center;
-    align-items: center;
+  }
+  .layout-back{
+    height:80%;
+    width: 20%;
+    margin-right: 20rpx;
+  }
+  .back-img{
+    width: 50rpx;
+    height: 50rpx;
   }
   .swiper_zi{
+    margin-left: 10rpx;
     height:80%;
-    width: 60%;
+    width: 50%;
     border: 1px solid #f0f0f0;
     border-radius: 50rpx;
     padding-left: 20rpx;

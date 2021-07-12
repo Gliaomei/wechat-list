@@ -4,6 +4,10 @@ Component({
     navbarData: {   //navbarData   由父页面传递的数据，变量名字自命名
       type: Array,
       value: [],
+    },
+    showBack: {
+      type: Boolean,
+      value: false,
     }
   },
   data: {
@@ -18,13 +22,7 @@ Component({
     searchWidth: 0, // 搜索框宽度
     searchHeight: 0, // 搜索框高度
     placeholder: '',
-    adList:[{
-      'url':'',
-      'title':'刚刚预约了服务'
-    },{
-      'url':'',
-      'title':'内容内容内容内容内容'
-    }],
+    backImgUrl: '../../images/back.png',
   },
   lifetimes: {
     // 生命周期函数，可以为函数，或一个在methods段中定义的方法名
@@ -39,7 +37,7 @@ Component({
           const margin = top - statusBarHeight
           this.setData({
             navHeight: (height + statusBarHeight + (margin * 2)),
-            searchMarginTop: statusBarHeight + margin, // 状态栏 + 胶囊按钮边距
+            searchMarginTop: statusBarHeight + margin + 4, // 状态栏 + 胶囊按钮边距
             searchHeight: height,  // 与胶囊按钮同高
             searchWidth: right - width // 胶囊按钮右边坐标 - 胶囊按钮宽度 = 按钮左边可使用宽度
           })
@@ -67,6 +65,22 @@ Component({
       wx.navigateTo({
         url: '../../pages/search-page/index',
       })
+    },
+    // 点击返回
+    backHandle: function():void{
+      wx.navigateTo({
+        url: '/pages/index/index'
+      });
+      // const pages = getCurrentPages();
+      // if (pages.length >= 2) {
+      //   wx.navigateBack({
+      //     delta: 1
+      //   });
+      // } else {
+      //   wx.navigateTo({
+      //     url: '/pages/index/index'
+      //   });
+      // }
     }
   }
 }) 

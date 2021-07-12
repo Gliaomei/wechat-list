@@ -14,6 +14,6 @@
 </view>
 <view class="history-list" >
   <view class="item-block" wx:for="{{historyList}}" wx:key="item">
-    <text class="item">{{item}}</text>
+    <text class="item" bindtap="searchHistory" data-item="{{item}}">{{item}}</text>
   </view>
 </view>
