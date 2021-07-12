@@ -59,7 +59,11 @@ Component({
       }
     },
     // 点击跳转搜索页面
-    bindViewTap: function():void{
+    bindViewTap: function(item: any):void{
+      wx.setStorage({
+        key: "clickItem",
+        data: item.currentTarget.dataset.item
+      })
       wx.navigateTo({
         url: '../../pages/search-page/index',
       })

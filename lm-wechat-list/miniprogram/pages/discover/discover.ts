@@ -7,6 +7,7 @@ Page({
   data: {
     dataList: [], //数据源
     loading: false,
+    navbarData: ["Ozworld","看见每一种可能","2020欧洲杯","LOVE UNITES新系列","ADIZERO PRIME X"],
   },
   onLoad():void {
     this.getShowList();
@@ -46,6 +47,6 @@ Page({
   onPullDownRefresh: function():void {
     this.setData({ dataList: [] });
     this.getShowList();
-  }
+  },
 })
 

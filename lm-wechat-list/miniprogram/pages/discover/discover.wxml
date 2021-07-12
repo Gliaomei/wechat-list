@@ -1,10 +1,17 @@
 <view class="discover-content">
-  <search-bar navbarData="{{[1,2,3,4]}}"/>
+  <search-bar 
+    navbarData="{{navbarData}}"
+  />
   <!-- list组件 -->
-  <view class="list-content">
+  <scroll-view  
+    scroll-y="true" 
+    style="height: 603px;" 
+    class="list-content"
+    bindscrolltolower="onReachBottom"
+  >
     <show-list 
       showList="{{dataList}}" 
       loading="{{loading}}"
     />
-  </view>
+  </scroll-view>
 </view>
