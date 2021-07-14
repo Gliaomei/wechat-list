@@ -1,0 +1,4 @@
+<view class="key-banner">
+  <image src="{{imgInfo.imgUrl}}" />
+  <text class="text-banner">{{imgInfo.imgDescription}}</text>
+</view>

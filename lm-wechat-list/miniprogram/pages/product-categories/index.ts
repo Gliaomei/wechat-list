@@ -3,11 +3,12 @@ Page({
     categoriesList: [], //数据源
     loading: false,
     navbarData: ["Ozworld","看见每一种可能","2020欧洲杯","LOVE UNITES新系列","ADIZERO PRIME X"],
-    contentId: '',
+    contentId: '1',
     layout: [],
   },
   onLoad():void {
     this.getCategoriesList()
+    this.getContentDetail()
   },
   // 获取分类列表
   getCategoriesList():void {

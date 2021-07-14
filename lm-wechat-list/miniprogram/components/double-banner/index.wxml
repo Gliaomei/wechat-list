@@ -1,0 +1,8 @@
+<view class="double-banner">
+  <block wx:for="{{imgInfo.itemList}}" wx:key="index">
+    <view class="banner-item" bindtap="clickLink" data-item="{{item}}">
+      <image class="img" src="{{item.imgUrl}}" />
+      <text class="text-banner">{{item.imgDescription}}</text>
+    </view>
+  </block>
+</view>

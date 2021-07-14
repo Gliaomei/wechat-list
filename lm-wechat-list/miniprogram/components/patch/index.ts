@@ -4,7 +4,7 @@ Component({
       type: Object,
       value: {},
       observer(newValue){
-        this.resetData(newValue);
+        this.resetData(newValue)
       }
     }
   },
@@ -15,7 +15,7 @@ Component({
   },
   lifetimes: {
     attached: function () {
-      this.resetData(this.properties.itemInfo);
+      this.resetData(this.properties.itemInfo)
     }
   },
   methods: {
@@ -25,12 +25,6 @@ Component({
       this.setData({
         linkInfo: JSON.parse(options)
       })
-      const { articleInfo, headDescription, link} = JSON.parse(options);
-      this.setData({
-        articleInfo: articleInfo,
-        headDescription: headDescription,
-        link: link
-      })
     }
   }
-})
+  })

@@ -9,9 +9,7 @@ Component({
     }
   },
   data:{
-    articleInfo:{},
-    headDescription: '',
-    link: '',
+    linkInfo: {},
   },
   lifetimes: {
     attached: function () {
@@ -19,17 +17,11 @@ Component({
     }
   },
   methods: {
-    // 重置数据
+    //重置数据
     resetData(item:any):void{
       const{ options } = item.component[0];
       this.setData({
         linkInfo: JSON.parse(options)
-      })
-      const { articleInfo, headDescription, link} = JSON.parse(options);
-      this.setData({
-        articleInfo: articleInfo,
-        headDescription: headDescription,
-        link: link
       })
     }
   }

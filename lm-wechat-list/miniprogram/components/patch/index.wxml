@@ -1,0 +1,9 @@
+<view class="patch">
+  <block wx:for="{{linkInfo}}" wx:key="item">
+    <view class="img-list">
+      <image class="img" src="{{item.imgUrl}}" />
+      <text class="img-text">{{item.imgDescription}}</text>
+    </view>
+  </block>
+</view>
+

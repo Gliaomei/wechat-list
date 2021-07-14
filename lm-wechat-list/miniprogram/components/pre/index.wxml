@@ -1,0 +1,5 @@
+<view class="pre-content">
+  <view  class="title">
+    {{linkInfo.headDescription}}
+  </view>
+</view>

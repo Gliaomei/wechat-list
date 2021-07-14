@@ -1,0 +1,11 @@
+.key-banner{
+  position: relative;
+}
+.text-banner{
+  position: absolute;
+  left: 10px; 
+  bottom: 15px;
+  font-size: 24rpx;
+  padding: 3px;
+  background-color: white;
+}

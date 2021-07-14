@@ -3,7 +3,12 @@
     "show-list":"../../components/show-list",
     "search-bar":"../../components/search-bar",
     "tagline": "../../components/tagline",
-    "plp":"../../components/plp"
+    "plp":"../../components/plp",
+    "key-banner": "../../components/key-banner",
+    "double-banner": "../../components/double-banner",
+    "pre": "../../components/pre",
+    "mix-match-banner": "../../components/mix-match-banner",
+    "patch": "../../components/patch"
   },
   "backgroundColor": "#ECEDEF",
   "navigationStyle": "custom"

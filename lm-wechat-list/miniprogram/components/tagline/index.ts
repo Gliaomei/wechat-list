@@ -3,6 +3,12 @@ Component({
     itemInfo:{
       type: Object,
       value: {},
+      observer(newValue){
+        const{ options } = newValue.component[0];
+        this.setData({
+          linkInfo: JSON.parse(options)
+        })
+      }
     }
   },
   data:{
@@ -20,5 +26,4 @@ Component({
       })
     }
   },
-  methods: {}
 })

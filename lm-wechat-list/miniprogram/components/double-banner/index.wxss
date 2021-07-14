@@ -1,0 +1,23 @@
+.double-banner{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.banner-item{
+  width: 49%;
+  position: relative;
+  margin-right: 2px;
+  margin-bottom: -3px;
+}
+.img{
+  width: 100%;
+  height: 180px;
+}
+.text-banner{
+  position: absolute;
+  left: 10px; 
+  bottom: 12px;
+  font-size: 24rpx;
+  padding: 3px;
+  background-color: white;
+}

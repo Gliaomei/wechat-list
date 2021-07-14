@@ -28,6 +28,26 @@
             wx:if="{{item.component[0].componentCode === 'PLP'}}"
             itemInfo="{{item}}"
           />
+          <key-banner 
+            wx:if="{{item.component[0].componentCode === 'KEY_BANNER'}}"
+            itemInfo="{{item}}"
+          />
+          <double-banner 
+            wx:if="{{item.component[0].componentCode === 'DOUBLE_BANNER'}}"
+            itemInfo="{{item}}"
+          />
+          <pre 
+            wx:if="{{item.component[0].componentCode === 'PRE'}}"
+            itemInfo="{{item}}"
+          />
+          <mix-match-banner 
+            wx:if="{{item.component[0].componentCode === 'MIX_MATCH_BANNER'}}"
+            itemInfo="{{item}}"
+          />
+          <patch 
+            wx:if="{{item.component[0].componentCode === 'PATCH'}}"
+            itemInfo="{{item}}"
+          />
         </block>
       </view>
     </scroll-view>

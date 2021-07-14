@@ -12,9 +12,14 @@
   align-items: center;
 }
 .list-item{
+  min-width: 25px;
+  max-width: 66px;
   margin-bottom: 60rpx;
   font-size: 24rpx;
   color: #666666;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+  overflow: hidden;
 }
 .click-style{
   color: #000000;
