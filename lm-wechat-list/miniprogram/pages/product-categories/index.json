@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "show-list":"../../components/show-list",
+    "search-bar":"../../components/search-bar",
+    "tagline": "../../components/tagline",
+    "plp":"../../components/plp"
+  },
+  "backgroundColor": "#ECEDEF",
+  "navigationStyle": "custom"
+}

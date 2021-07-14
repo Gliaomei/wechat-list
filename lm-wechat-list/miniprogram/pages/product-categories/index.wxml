@@ -1,0 +1,35 @@
+<view >
+  <search-bar 
+    navbarData="{{navbarData}}"
+  />
+  <view class="flex-content">
+    <!-- 左边 -->
+    <view class="flex-left" style="height: 535px;">
+      <block wx:for="{{categoriesList}}" wx:key="item">
+        <view 
+          bindtap="clickHandle" 
+          data-item="{{item}}" 
+          class="list-item"
+          class="{{contentId === item.contentId?'click-style list-item':'normal-style list-item'}}" 
+        >
+          {{item.contentName}}
+        </view>
+      </block>
+    </view>
+    <!-- 右边 -->
+    <scroll-view scroll-y="{{true}}" class="flex-right" style="height: 560px;">
+      <view>
+        <block wx:for="{{layout}}" wx:key="index">
+          <tagline 
+            wx:if="{{item.component[0].componentCode === 'TAGLINE'}}" 
+            itemInfo="{{item}}"
+          />
+          <plp 
+            wx:if="{{item.component[0].componentCode === 'PLP'}}"
+            itemInfo="{{item}}"
+          />
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+</view>

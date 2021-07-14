@@ -1,0 +1,8 @@
+<view class="tagline-content">
+  <view  class="title">
+    {{linkInfo.headDescription}}
+  </view>
+  <view  wx:if="{{linkInfo.link}}" class="link">
+    {{linkInfo.linkDescription}}
+  </view>
+</view>

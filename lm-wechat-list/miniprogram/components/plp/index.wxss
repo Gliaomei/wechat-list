@@ -1,0 +1,17 @@
+.plp-content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.plp-item{
+  padding: 10px 0px;
+  width: 33%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+}
+.plp-img{
+  width: 70px;
+  height: 70px;
+}

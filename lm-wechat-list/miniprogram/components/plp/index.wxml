@@ -1,0 +1,10 @@
+<view class="plp-content">
+  <block wx:for="{{articleInfo}}" wx:key="index">
+    <view class="plp-item">
+      <image 
+        class="plp-img"
+        src="{{item.articleImgUrl}}" 
+      />
+    </view>
+  </block>
+</view>
