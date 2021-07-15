@@ -9,3 +9,6 @@
   padding: 3px;
   background-color: white;
 }
+.img{
+  width: 100%;
+}

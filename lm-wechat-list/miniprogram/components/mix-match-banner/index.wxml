@@ -1,5 +1,5 @@
 <view class="main-img">
-  <image src="{{linkInfo.imgUrl}}" />
+  <image class="img-1" src="{{linkInfo.imgUrl}}" />
   <text class="text-banner">{{linkInfo.headDescription}}</text>
   <!-- 底部图片 -->
   <view class="bottom-img">

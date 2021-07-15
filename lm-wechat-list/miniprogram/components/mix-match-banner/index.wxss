@@ -29,3 +29,6 @@
   width: 100%;
   height: 66px;
 }
+.img-1{
+  width: 100%;
+}

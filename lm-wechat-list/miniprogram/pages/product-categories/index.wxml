@@ -17,7 +17,7 @@
       </block>
     </view>
     <!-- 右边 -->
-    <scroll-view scroll-y="{{true}}" class="flex-right" style="height: 560px;">
+    <scroll-view scroll-y="{{true}}" class="flex-right" style="height: 550px;">
       <view>
         <block wx:for="{{layout}}" wx:key="index">
           <tagline 
