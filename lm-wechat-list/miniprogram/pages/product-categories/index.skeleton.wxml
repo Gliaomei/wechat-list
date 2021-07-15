@@ -1,0 +1,106 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/7/15 下午2:01:31
+使用方法：
+在 /Users/fcx/Desktop/workplace/project/wechat-list/lm-wechat-list/miniprogram/pages/product-categories/index.wxml 引入模板
+
+```
+<import src="index.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 /Users/fcx/Desktop/workplace/project/wechat-list/lm-wechat-list/miniprogram/pages/product-categories/index.wxss 中引入样式
+```
+@import "./index.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view>
+      <view class="flex-content">
+        <view class="flex-left" style="height: 535px; border: none;">
+          <view class="skeleton-loading click-style list-item sk-transparent sk-text-14-2857-799 sk-text" data-item="[object Object]" style="border: none;">
+            推荐
+          </view>
+          <view class="skeleton-loading normal-style list-item sk-transparent sk-text-14-2857-405 sk-text" data-item="[object Object]">
+            女装
+          </view>
+          <view class="skeleton-loading normal-style list-item sk-transparent sk-text-14-2857-588 sk-text" data-item="[object Object]">
+            女鞋
+          </view>
+          <view class="skeleton-loading normal-style list-item sk-transparent sk-text-14-2857-332 sk-text" data-item="[object Object]">
+            儿童
+          </view>
+          <view class="skeleton-loading normal-style list-item sk-transparent sk-text-14-2857-973 sk-text" data-item="[object Object]">
+            配件
+          </view>
+          <view class="skeleton-loading normal-style list-item sk-transparent sk-text-14-2857-816 sk-text" data-item="[object Object]">
+            男鞋
+          </view>
+          <view class="skeleton-loading normal-style list-item sk-transparent sk-text-14-2857-246 sk-text" data-item="[object Object]">
+            男装
+          </view>
+          <view class="skeleton-loading normal-style list-item sk-transparent sk-text-14-2857-959 sk-text" data-item="[object Object]">
+            春季限定
+          </view>
+          <view class="skeleton-loading normal-style list-item sk-transparent sk-text-14-2857-134 sk-text" data-item="[object Object]">
+            完整component 测试
+          </view>
+          <view class="skeleton-loading normal-style list-item sk-transparent sk-text-14-2857-378 sk-text" data-item="[object Object]">
+            ECP测试
+          </view>
+          <view class="skeleton-loading normal-style list-item sk-transparent sk-text-14-2857-609 sk-text" data-item="[object Object]">
+            SUMZTEST-
+          </view>
+        </view>
+        <scroll-view class="flex-right" scroll-y="true" style="height: 550px;">
+          <view>
+            <view is="components/tagline/index">
+              <view class="tagline-index--tagline-content">
+                <view class="skeleton-loading tagline-index--title sk-transparent sk-text-14-2857-918 sk-text">
+                  主推系列/活动--预览714
+                </view>
+              </view>
+            </view>
+            <view is="components/key-banner/index">
+              <view class="key-banner-index--key-banner">
+                <image class="skeleton-loading key-banner-index--img sk-image"></image>
+                <text class="key-banner-index--text-banner sk-transparent sk-text-14-2857-841 sk-text">STAN SMITH, FOREVER. 环保系列</text>
+              </view>
+            </view>
+            <view is="components/double-banner/index">
+              <view class="double-banner-index--double-banner">
+                <view class="double-banner-index--banner-item" data-item="[object Object]">
+                  <image class="skeleton-loading double-banner-index--img sk-image"></image>
+                  <text class="double-banner-index--text-banner sk-transparent sk-text-14-2857-856 sk-text">Y-3超值精选</text>
+                </view>
+                <view class="double-banner-index--banner-item" data-item="[object Object]">
+                  <image class="skeleton-loading double-banner-index--img sk-image"></image>
+                  <text class="double-banner-index--text-banner sk-transparent sk-text-14-2857-63 sk-text">折扣专区</text>
+                </view>
+              </view>
+            </view>
+            <view is="components/tagline/index">
+              <view class="tagline-index--tagline-content">
+                <view class="skeleton-loading tagline-index--title sk-transparent sk-text-14-2857-959 sk-text">
+                  品牌
+                </view>
+              </view>
+            </view>
+            <view is="components/double-banner/index">
+              <view class="double-banner-index--double-banner">
+                <view class="double-banner-index--banner-item" data-item="[object Object]">
+                  <image class="skeleton-loading double-banner-index--img sk-image"></image>
+                </view>
+                <view class="double-banner-index--banner-item" data-item="[object Object]">
+                  <image class="skeleton-loading double-banner-index--img sk-image"></image>
+                </view>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</template>

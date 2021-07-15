@@ -24,6 +24,6 @@ Component({
       this.setData({
         linkInfo: JSON.parse(options)
       })
-    }
+    },
   },
 })

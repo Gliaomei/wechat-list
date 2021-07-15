@@ -1,8 +1,12 @@
+<import src="index.skeleton.wxml"/>
 <view >
   <search-bar 
     navbarData="{{navbarData}}"
   />
-  <view class="flex-content">
+  <!-- 骨架屏显示 -->
+  <template is="skeleton" wx:if="{{loading}}" />
+  <!-- 内容 -->
+  <view wx:else class="flex-content">
     <!-- 左边 -->
     <view class="flex-left" style="height: 535px;">
       <block wx:for="{{categoriesList}}" wx:key="item">
